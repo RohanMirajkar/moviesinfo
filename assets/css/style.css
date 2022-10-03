@@ -27,11 +27,10 @@
     float: right;
     cursor: pointer;
 }
-figure img{
-    width: 100%;
+.card-body img{
     height: 170px;
     object-fit: cover;
-    border: 1px solid #ededed;
+    width: 100%;
 }
 
 @keyframes slideDown {
