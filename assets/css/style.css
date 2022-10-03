@@ -10,6 +10,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    animation: Fadein .5s ease-in-out  1 forwards;
 }
 .myModal{
     padding: 20px;
@@ -20,6 +21,7 @@
     top: 25%;
     left: 20%;
     background-color: #fff;
+    animation: slideDown .5s ease-in-out 1 forwards;
 }
 .myClose{
     float: right;
@@ -29,4 +31,25 @@ figure img{
     width: 100%;
     height: 170px;
     object-fit: cover;
+    border: 1px solid #ededed;
+}
+
+@keyframes slideDown {
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes Fadein{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
