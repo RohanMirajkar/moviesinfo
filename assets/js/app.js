@@ -1,4 +1,3 @@
-cl=console.log;
 const addMoviebtn = document.getElementById('addMovie');
 const backDrop = document.getElementById('backDrop');
 const myModal = document.getElementById('myModal');
@@ -23,8 +22,6 @@ const AddMovie =(e)=>{
         movieRating : ratingIpt.value
     };
     myMovies.push(obj);
-    cl(myMovies);
-    cl(obj)
     const colDiv = document.createElement('div');
     colDiv.className = 'col-sm-6 col-md-4'
     const cardDiv = document.createElement('div');
